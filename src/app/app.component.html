@@ -1,0 +1,6 @@
+<div><app-shared name="Appdsfsdf"></app-shared></div>
+<div><a routerLink="/first">First</a>
+{{message}}
+</div>
+<app-test (childEvent)="message=$event" [parentData]="data"></app-test>
+<router-outlet></router-outlet>
