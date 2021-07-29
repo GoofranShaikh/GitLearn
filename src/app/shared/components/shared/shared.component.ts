@@ -1,5 +1,7 @@
-import { Input } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-shared',
@@ -10,6 +12,7 @@ export class SharedComponent implements OnInit {
 
   constructor() { }
 @Input() name:string;
+@Output() public form=new EventEmitter()
   ngOnInit() {
   }
 
