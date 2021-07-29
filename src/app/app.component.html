@@ -1,8 +1,10 @@
 <div><app-shared (childForm)="form=$event" name="Appdsfsdf"></app-shared>
-{{form}}
+{{form | json}}
 </div>
 <div><a routerLink="/first">First</a>
 {{message}}
 </div>
 <app-test (childEvent)="message=$event" [parentData]="data"></app-test>
+
+
 <router-outlet></router-outlet>
