@@ -1,4 +1,6 @@
-<div><app-shared name="Appdsfsdf"></app-shared></div>
+<div><app-shared (childForm)="form=$event" name="Appdsfsdf"></app-shared>
+{{form}}
+</div>
 <div><a routerLink="/first">First</a>
 {{message}}
 </div>

@@ -10,4 +10,5 @@ export class AppComponent {
   data='fromAppComponent'
   title = 'angmodule';
   public message=""
+  public form:any;
 }

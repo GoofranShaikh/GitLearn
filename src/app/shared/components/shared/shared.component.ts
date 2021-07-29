@@ -12,8 +12,10 @@ export class SharedComponent implements OnInit {
 
   constructor() { }
 @Input() name:string;
-@Output() public form=new EventEmitter()
+@Output() public childForm=new EventEmitter()
   ngOnInit() {
   }
-
+  openForm(){
+    this.childForm.emit('form opened')
+  }
 }
